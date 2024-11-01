@@ -1,0 +1,442 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: #121212;
+    /* Dark background */
+    color: #e0e0e0;
+    /* Light text color */
+}
+
+/* Header Section */
+header {
+    background-color: #1f1f1f;
+    /* Dark gray background */
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+span:hover{
+    color: #ff5f09;
+    transition: color 0.3s;
+}
+
+nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e0e0e0;
+    /* Light text */
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff5f09;
+    /* Orange hover effect */
+}
+
+.cta {
+    margin-left: auto;
+    /* Pushes the CTA button to the right */
+}
+
+.cta-button {
+    background-color: #ff5f09;
+    /* Orange background */
+    color: #ffffff;
+    /* White text */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e0e0e0;
+    /* Light gray on hover */
+    color: #000000;
+    /* Black text on hover */
+}
+
+
+
+/* Hero Section */
+.hero {
+    background-color: #1f1f1f;
+    /* Dark gray background */
+    color: #ffffff;
+    /* White text */
+    text-align: center;
+    padding: 100px 20px;
+    /* Adjust padding for vertical space */
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #ff5f09;
+}
+
+.hero h2:hover{
+    color: #e0e0e0;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-buttons {
+    display: inline-flex;
+}
+
+.hero-button,
+.resume-button {
+    background-color: #ff5f09;
+    /* Orange background */
+    color: #ffffff;
+    /* White text */
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+.hero-button:hover,
+.resume-button:hover {
+    background-color: #e0e0e0;
+    /* Light gray on hover */
+    color: #000000;
+    /* Black text on hover */
+}
+
+/* About Section */
+.about {
+    display: flex;
+    padding: 40px 80px;
+    background-color: #1f1f1f;
+    /* Dark gray background */
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    /* Center image and text vertically */
+}
+
+.about-image {
+    flex: 1;
+    margin-right: 20px;
+    /* Space between image and text */
+}
+
+.about-image img {
+    max-width: 100%;
+    /* Responsive image */
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+.about-text {
+    flex: 2;
+    padding: 20px 20px;
+}
+
+/* Skills Section */
+.skills {
+    background-color: #1f1f1f;
+    /* Dark gray background */
+    padding: 40px 20px;
+}
+
+.skills h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Center the skills cards */
+}
+
+.skill-card {
+    background-color: #ff5f09;
+    /* Orange background */
+    color: #ffffff;
+    /* White text */
+    margin: 10px;
+    padding: 15px 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    /* Slight shadow */
+    transition: transform 0.3s, background-color 0.3s;
+    /* Transition for smoothness */
+}
+
+.skill-card:hover {
+    background-color: #e0e0e0;
+    color: #000000;
+    /* Lighter orange on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge the card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    /* Enhanced shadow */
+}
+
+/* Projects Section */
+.projects {
+    padding: 40px 20px;
+    background-color: #1f1f1f;
+    /* Dark gray background */
+}
+
+.projects h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Center project cards */
+}
+
+.project-card {
+    background-color: #252525;
+    /* Slightly lighter dark background */
+    border: 1px solid #333333;
+    /* Dark border */
+    margin: 10px;
+    border-radius: 10px;
+    /* Rounded corners */
+    overflow: hidden;
+    /* Hide overflow for rounded corners */
+    width: 300px;
+    /* Fixed width */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    /* Slight shadow */
+}
+
+.project-thumbnail {
+    width: 100%;
+    /* Full width for the image */
+}
+
+.project-info {
+    padding: 15px;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-between;
+    /* Space between buttons */
+}
+
+.btn {
+    background-color: #ff5f09;
+    /* Orange background */
+    color: #ffffff;
+    /* White text */
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e0e0e0;
+    /* Light gray on hover */
+    color: #000000;
+    /* Black text on hover */
+}
+
+/* Education Section */
+.education {
+    padding: 40px 20px;
+    background-color: #1f1f1f;
+    /* Dark gray background */
+}
+
+.education h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.education-container {
+    display: flex;
+    justify-content: center;
+    /* Center education cards */
+    flex-wrap: wrap;
+    /* Wrap cards */
+}
+
+.education-card {
+    background-color: #ff5f09;
+    /* Orange background */
+    color: #ffffff;
+    /* White text */
+    margin: 10px;
+    padding: 15px 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    /* Slight shadow */
+}
+
+.education-card:hover {
+    transform: scale(1.05);
+    /* Zoom effect on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    /* Enhanced shadow on hover */
+}
+
+/* Contact Section */
+.contact {
+    padding: 40px 20px;
+    background-color: #1f1f1f; /* Dark gray background */
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff; /* White text for the heading */
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto; /* Center form */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form elements */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px; /* Space between label and input */
+    color: #e0e0e0; /* Light text color */
+}
+
+input,
+textarea {
+    width: 100%; /* Full width inputs */
+    padding: 10px;
+    border: 1px solid #333333; /* Dark border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #252525; /* Slightly lighter dark background */
+    color: #e0e0e0; /* Light text color */
+    transition: border-color 0.3s; /* Smooth border color transition */
+}
+
+input:focus,
+textarea:focus {
+    border-color: #ff5f09; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.submit-btn {
+    background-color: #ff5f09; /* Orange background */
+    color: #ffffff; /* White text */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.submit-btn:hover {
+    background-color: #e0e0e0; /* Light gray on hover */
+    color: #000000; /* Black text on hover */
+    transform: scale(1.1);
+}
+
+/* Social Links */
+.social-links {
+    text-align: center; /* Center social links */
+    margin-top: 20px; /* Space above social links */
+}
+
+.social-icon {
+    margin: 0 10px; /* Space between icons */
+    text-decoration: none; /* Remove underline */
+    color: #ff5f09; /* Orange color */
+    font-size: 24px; /* Increase icon size */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.social-icon:hover {
+    color: #e0e0e0; /* Change icon color on hover */
+    transform: scale(1.1);
+}
+
+.email{
+    padding: 40px;
+}
+
+
+/* Footer Section */
+.footer {
+    background-color: #000000;
+    /* Solid black background */
+    color: #ffffff;
+    /* White text */
+    padding: 20px 0;
+    text-align: center;
+    /* Center text */
+}
+
+.footer :hover {
+    color: #ff5f09;
+    text-shadow: 2px solid #ff5f09;
+}
+
+a{
+    color: #ffffff;
+}
+
+.footer-container {
+    max-width: 1200px;
+    /* Max width for footer */
+    margin: 0 auto;
+    /* Center footer */
+}
